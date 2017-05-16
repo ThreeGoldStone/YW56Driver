@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="15dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="15dp">
+
+    <TextView
+        android:id="@+id/tvIStationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="未分配" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/tvITime"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:text="15:44 - 16:00" />-->
+
+    <TextView
+        android:id="@+id/tvICount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="13dp"
+        android:layout_toEndOf="@+id/tvIStationName"
+        android:text="(5人)" />
+
+</RelativeLayout>

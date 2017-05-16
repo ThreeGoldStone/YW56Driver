@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?><!--<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:scrollbars="none">-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:paddingBottom="10dp"
+    android:paddingRight="15dp"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/tviName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="李四 (234234)"
+        android:textColor="@color/commonTextColor"
+        android:textSize="@dimen/text_size_m" />
+
+    <ImageView
+        android:id="@+id/ivPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/phone" />
+
+    <TextView
+        android:id="@+id/tvIMemo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tviName"
+        android:layout_marginTop="6dp"
+        android:text=" 18211440251"
+        android:textColor="@color/commonTextColor2"
+        android:textSize="@dimen/text_size_s" />
+</RelativeLayout><!--</HorizontalScrollView>-->

@@ -1,0 +1,2 @@
+include ':app', ':model','viewlib'
+project(':viewlib').projectDir = new File('../a_libs/viewlib')

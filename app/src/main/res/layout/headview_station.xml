@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:id="@+id/tvArrive1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:text="@string/arr"
+                android:textColor="@color/commonTextColor"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvArrive"
+                style="@style/head_text"
+                android:layout_toRightOf="@+id/tvArrive1"
+                android:text=" 计划 " />
+
+
+            <TextView
+                android:id="@+id/tvArriveTime1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/tvArrive"
+                android:text="15:44"
+                android:textColor="@color/commonTextColor"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btArrive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvArriveTime1"
+                android:layout_toRightOf="@+id/tvArrive1"
+                android:text="到达" />
+
+            <TextView
+                android:id="@+id/tvArriveR"
+                style="@style/head_text"
+                android:layout_below="@+id/tvArriveTime1"
+                android:layout_toRightOf="@+id/tvArrive1"
+                android:text=" 实际 "
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/tvArriveTime1R"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvArriveTime1"
+                android:layout_toEndOf="@+id/tvArriveR"
+                android:text="15:22"
+                android:textColor="@color/commonTextColor"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <View style="@style/divider" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:id="@+id/tvFinish"
+                style="@style/head_text"
+                android:layout_toRightOf="@+id/tvFinish1"
+                android:text=" 计划 " />
+
+
+            <TextView
+                android:id="@+id/tvFinishTime1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/tvFinish"
+                android:text="15:56"
+                android:textColor="@color/commonTextColor"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btFinish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvFinishTime1"
+                android:layout_toRightOf="@+id/tvFinish1"
+                android:text="完成" />
+
+            <TextView
+                android:id="@+id/tvFinishR"
+                style="@style/head_text"
+                android:layout_below="@+id/tvFinishTime1"
+                android:layout_toRightOf="@+id/tvFinish1"
+                android:text=" 实际 "
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/tvFinishTime1R"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvFinishTime1"
+                android:layout_toEndOf="@+id/tvFinishR"
+                android:text="15:42"
+                android:textColor="@color/commonTextColor"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvFinish1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="27dp"
+                android:paddingRight="10dp"
+                android:text="@string/finish"
+                android:textColor="@color/commonTextColor"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

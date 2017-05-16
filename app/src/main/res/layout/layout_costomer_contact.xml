@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/content_customer_detail">
+
+
+    <View style="@style/devider" />
+
+    <TableRow>
+
+        <EditText
+            android:layout_weight="1"
+            android:text="张三"
+            android:textColor="@color/commonTextColor"
+            android:textSize="@dimen/text_size_m" />
+
+        <View
+            style="@style/divider"
+            android:layout_width="1dp"
+            android:layout_height="20dp" />
+
+        <EditText
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="18811332233"
+            android:textColor="@color/commonTextColor"
+            android:textSize="@dimen/text_size_m" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/delete" />
+    </TableRow>
+
+
+</merge>

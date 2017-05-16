@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="cn.com.yw56.driver.CustomerDetailActivity"
+    tools:showIn="@layout/activity_customer_detail">
+
+    <LinearLayout
+        android:id="@+id/content_customer_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f0f0f0"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin">
+
+            <ImageView
+                android:id="@+id/ivUserHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/head" />
+
+            <View
+                style="@style/devider"
+                android:layout_marginTop="10dp" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TableRow android:orientation="horizontal">
+
+                    <TextView android:text="姓名 :" />
+
+                    <EditText
+                        android:id="@+id/tvCustomerName"
+                        android:layout_weight="1"
+                        android:text="张三"
+                        android:textColor="@color/commonTextColor"
+                        android:textSize="@dimen/text_size_m" />
+                </TableRow>
+
+                <View style="@style/devider" />
+
+                <TableRow android:orientation="horizontal">
+
+                    <TextView android:text="编号 :" />
+
+                    <EditText
+                        android:id="@+id/tvCustomerCode"
+                        android:layout_weight="1"
+                        android:text="6502302"
+                        android:textColor="@color/commonTextColor"
+                        android:textSize="@dimen/text_size_m" />
+                </TableRow>
+
+                <View style="@style/devider" />
+
+                <TableRow android:orientation="horizontal">
+
+                    <TextView android:text="取货点 :" />
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:text="未指定"
+                        android:textColor="@color/commonTextColor"
+                        android:textSize="@dimen/text_size_m" />
+                </TableRow>
+
+                <View style="@style/devider" />
+
+                <TableRow android:orientation="horizontal">
+
+                    <TextView android:text="地址 :" />
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:text="北京市通州区"
+                        android:textColor="@color/commonTextColor"
+                        android:textSize="@dimen/text_size_m" />
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+        <View style="@style/devider" />
+
+        <View
+            style="@style/devider"
+            android:layout_marginTop="10dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="6dp"
+                android:text="联系人" />
+
+            <include layout="@layout/layout_costomer_contact" />
+
+            <include layout="@layout/layout_costomer_contact" />
+
+            <include layout="@layout/layout_costomer_contact" />
+        </TableLayout>
+
+        <View style="@style/devider" />
+
+    </LinearLayout>
+</ScrollView>
